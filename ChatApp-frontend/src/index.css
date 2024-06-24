@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  fonts link  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --primarycolor: #2288ff;
+  --secondarycolor: #192f6a;
+  --text-color: #314862;
+  --bgcolor: #ffffff;
+  --box-i-color: #f6f6f6;
+  --properties-bgcolor: #fbfbfb;
+  --unchange: #ffffff;
+  --box-shaddow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+img {
+  width: 100%;
+}
+body {
+  background: var(--bgcolor);
+  color: var(--text-color);
+}
+section {
+  padding: 4.5rem 0 3rem 0;
+}
+.nav-container,
+.home-container,
+.howWorks-containner,
+.about-container,
+.footer-container,
+.faq-containner {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  padding: 10px 22px;
+  background: var(--primarycolor);
+  color: var(--bgcolor);
+  border-radius: 50px;
+}
+.btn:hover {
+  background: #3492fd;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1080px) {
+  .nav-container,
+  .home-container,
+  .about-container,
+  .sales-container,
+  .properties-container,
+  .newsletter-container,
+  .footer-container,
+  .feature-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 880px) {
+  section {
+    padding: 4rem 0 3rem;
+  }
+}
